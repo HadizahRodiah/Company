@@ -1,4 +1,57 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+html{
+  scroll-behavior: smooth;
+}
+#intro,#contact,#project,#about{
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 20%;
+}
+@keyframes appear {
+  from{
+      opacity:1;
+      scale:0.8;
+  }
+  to{
+      opacity:1;
+      scale:1;
+  }
+  
+}
 
+#project:hover,#about:hover{
+  background-color: rgb(255, 194, 81);
+  color:black;
+  border:0.5px solid  rgb(117, 50, 5);
+  margin-top:5px;
+  transition:1s;
+}
+#intro:hover ,#contact:hover{
+  background-color: rgb(117, 50, 5);
+  color:black;
+  border:0.5px solid  rgb(255, 194, 81);
+  margin-top:5px;
+  transition:1s;
+}
+.box:hover{
+  background-color:  rgb(117, 50, 5);
+  color: white;
+-webkit-box-shadow: 0px 0px 4px 2px rgb(255, 255, 255);
+-moz-box-shadow: 0px 0px 4px 2px rgb(255, 255, 255);
+box-shadow: 0px 0px 4px 2px rgb(255, 255, 255);
+margin:2px;
+cursor: pointer;
+transition:1s;
+}
+#box:hover{
+  background-color:  rgb(117, 50, 5);
+  color: white;
+-webkit-box-shadow: 0px 0px 4px 2px rgb(255, 255, 255);
+-moz-box-shadow: 0px 0px 4px 2px rgb(255, 255, 255);
+box-shadow: 0px 0px 4px 2px rgb(255, 255, 255);
+margin:2px;
+cursor: pointer;
+transition:1s;
+}

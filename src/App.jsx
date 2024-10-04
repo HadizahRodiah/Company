@@ -1,22 +1,24 @@
 import React from 'react'
-import About from './About.jsx'
 import './App.css'
-import Intro from './Intro.jsx'
+import Home from './Home.jsx'
 import Nav from './Nav.jsx'
+import Service from './Service.jsx'
+import Collab from './Collab.jsx'
+import About from './About.jsx'
 import Project from './Project.jsx'
-import Contact from './Contact.jsx'
-
 
 function App() {
-  AOS.init();
- return(
-  <>
-<Nav/>
-<Intro/>
-<About/>
-<Project/>
-<Contact/>
-  </>
+
+
+  return (
+    <>
+      <Nav/>
+      <Home/>
+      <About/>
+      <Service/>
+      <Project/>
+      <Collab/>
+    </>
   )
 }
 

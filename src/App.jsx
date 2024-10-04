@@ -6,6 +6,8 @@ import Service from './Service.jsx'
 import Collab from './Collab.jsx'
 import About from './About.jsx'
 import Project from './Project.jsx'
+import Reviews from './Reviews.jsx'
+import Footer from './Footer.jsx'
 
 function App() {
 
@@ -17,7 +19,9 @@ function App() {
       <About/>
       <Service/>
       <Project/>
+      <Reviews/>
       <Collab/>
+      <Footer/>
     </>
   )
 }

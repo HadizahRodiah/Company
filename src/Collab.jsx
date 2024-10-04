@@ -8,10 +8,10 @@ import logow from './assets/logow.jpg';
 
 const Collab = () => {
   return (
-    <div className='bg-slate-900 w-screen overflow-x-hidden'>
+    <div className='bg-gray-100 w-screen overflow-x-hidden'>
       {/* Title Section */}
-      <div className='text-white text-center font-bold mb-8'>
-        <h1 className='text-3xl md:text-4xl font-serif tracking-wide'>Trusted by:</h1>
+      <div className='text-black text-center font-bold mb-8'>
+        <h1 className='text-3xl md:text-2xl bg-gray-100 font-serif tracking-wide'>Trusted by:</h1>
       </div>
 
       {/* Logos Section */}

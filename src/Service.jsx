@@ -4,7 +4,7 @@ import * as Icons from 'react-bootstrap-icons';
 
 const Service = () => {
   return (
-    <div className='w-full bg-slate-900 overflow-x-hidden relative'>
+    <div className='w-full bg-slate-900 overflow-x-hidden relative' id='service'>
       {/* Background image with overlay */}
       <img
         src={canva}

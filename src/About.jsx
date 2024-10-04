@@ -3,7 +3,7 @@ import imp from './assets/Imp.jpg';
 
 const About = () => {
   return (
-    <div className='w-full bg-white py-20' id='about'>
+    <div className='w-full bg-gray-100 py-20' id='about'>
       {/* About Section */}
       <div className='container mx-auto px-8 md:px-16 lg:px-24 text-center'>
         <h1 className='font-bold text-4xl text-indigo-900 mb-6'>About Almas Tech</h1>

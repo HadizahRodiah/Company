@@ -29,18 +29,18 @@ const Nav = () => {
 
           {/* Navigation Links for Desktop */}
           <div className="hidden md:flex space-x-8 font-bold">
-            <a href="#home" className="hover:text-green-700 transition-colors duration-300">Home</a>
-            <a href="#about" className="hover:text-green-700 transition-colors duration-300">About</a>
-            <a href="#service" className="hover:text-green-700 transition-colors duration-300">Service</a>
-            <a href="#project" className="hover:text-green-700 transition-colors duration-300">Project</a>
-            <a href="#contact" className="hover:text-green-700 transition-colors duration-300">Contact</a>
+            <a href="#home" className="hover:text-slate-700 transition-colors duration-300">Home</a>
+            <a href="#about" className="hover:text-slate-700 transition-colors duration-300">About</a>
+            <a href="#service" className="hover:text-slate-700 transition-colors duration-300">Service</a>
+            <a href="#project" className="hover:text-slate-700 transition-colors duration-300">Project</a>
+            <a href="#reviews" className="hover:text-slate-700 transition-colors duration-300">Reviews</a>
           </div>
 
           {/* Search and Contact for Desktop */}
           <div className="hidden md:flex items-center space-x-4">
             <a
-              href="#contact"
-              className="font-bold text-white px-4 py-2 rounded-full bg-slate-900 hover:bg-slate-700 transition duration-300"
+              href="#footer"
+              className="font-bold text-white px-4 py-2 rounded-full bg-indigo-900 hover:bg-slate-700 transition duration-300"
             >
               Contact
             </a>
@@ -70,13 +70,14 @@ const Nav = () => {
                   <span className='text-black text-4xl font-serif'>27+</span>
                   <span className="ml-2">Almas Tech</span>
                 </div>
-                <a href="#home" className="block py-2 text-center font-bold hover:text-green-700">Home</a>
-                <a href="#about" className="block py-2 text-center font-bold hover:text-green-700">About</a>
-                <a href="#service" className="block py-2 text-center font-bold hover:text-green-700">Service</a>
-                <a href="#project" className="block py-2 text-center font-bold hover:text-green-700">Project</a>
+                <a href="#home" className="block py-2 text-center font-bold hover:text-indigo-700">Home</a>
+                <a href="#about" className="block py-2 text-center font-bold hover:text-indigo-700">About</a>
+                <a href="#service" className="block py-2 text-center font-bold hover:text-indigo-700">Service</a>
+                <a href="#project" className="block py-2 text-center font-bold hover:text-indigo-700">Project</a>
+                <a href="#reviews" className="block py-2 text-center font-bold hover:text-indigo-700">Review</a>
                 <a
-                  href="#contact"
-                  className="mt-4 mr-auto font-bold text-white px-4 py-2 w-80 hover:scale-105 item-center justify-center rounded-full bg-slate-900 hover:bg-slate-700 transition duration-300 text-center"
+                  href="#footer"
+                  className="flex justify-center item-center mt-4 mr-auto ml-5 font-bold text-white px-4 py-2 w-60 hover:scale-105 item-center justify-center rounded-full bg-indigo-900 hover:bg-slate-700 transition duration-300 text-center"
                 >
                   Contact
                 </a>

@@ -1,7 +1,5 @@
 import React from 'react';
-import imr from './assets/imr.jpg';
-import imp from './assets/imp.jpg';
-import imq from './assets/imq.jpg';
+import imp from './assets/Imp.jpg';
 
 const About = () => {
   return (

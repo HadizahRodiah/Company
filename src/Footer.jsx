@@ -3,13 +3,13 @@ import * as Icons from 'react-bootstrap-icons';
 
 const Footer = () => {
   return (
-    <footer className='bg-slate-900 text-gary-100 py-20 w-full' id='footer'>
+    <footer className='bg-gray-900 text-gray-200 py-16 w-full' id='footer'>
       {/* Navigation Links */}
-      <nav className='flex flex-row md:flex-row justify-between items-center px-6 md:px-20 mb-10'>
+      <nav className='flex flex-col md:flex-row justify-center md:justify-between items-center px-6 md:px-20 mb-10'>
         <FooterLink href="#home" icon={<Icons.House />} label="Home" />
-        <FooterLink href="#about" icon={<Icons.Book/>} label="About" />
+        <FooterLink href="#about" icon={<Icons.Book />} label="About" />
         <FooterLink href="#service" icon={<Icons.Screwdriver />} label="Service" />
-        <FooterLink href="#project" icon={<Icons.PencilSquare />} label="project" />
+        <FooterLink href="#project" icon={<Icons.PencilSquare />} label="Project" />
       </nav>
 
       {/* Content Sections */}
@@ -34,13 +34,13 @@ const Footer = () => {
             <input
               type="email"
               id="subscribeEmail"
-              className='p-2 rounded mb-4 text-gray-100'
+              className='p-2 rounded mb-4 text-gray-900'
               placeholder='Enter your email...'
               required
             />
             <button
               type="submit"
-              className='bg-white text-slate-900 font-bold py-2 rounded hover:bg-slate-200 transition duration-300'
+              className='bg-indigo-600 text-white font-bold py-2 rounded hover:bg-indigo-700 transition duration-300'
             >
               Subscribe
             </button>
@@ -52,14 +52,14 @@ const Footer = () => {
         <div className='hidden md:block'>
           <h2 className='text-2xl font-bold text-gray-200 mb-4'>Give us a review</h2>
           <form className='flex flex-col'>
-            <label htmlFor="reviewName" className='flex items-center mb-2'>
-              <Icons.Person className='mr-2 text-gray-200' />
+            <label htmlFor="reviewName" className='flex items-center mb-2 text-gray-200'>
+              <Icons.Person className='mr-2' />
               Name
             </label>
             <input
               type="text"
               id="reviewName"
-              className='p-2 rounded mb-4 text-slate-900'
+              className='p-2 rounded mb-4 text-gray-900'
               placeholder='Enter your name'
               required
             />
@@ -71,7 +71,7 @@ const Footer = () => {
             <input
               type="email"
               id="reviewEmail"
-              className='p-2 rounded mb-4 text-slate-900'
+              className='p-2 rounded mb-4 text-gray-900'
               placeholder='Enter your email'
               required
             />
@@ -83,14 +83,14 @@ const Footer = () => {
             <textarea
               id="reviewMessage"
               rows="5"
-              className='p-2 rounded mb-4 text-slate-900 resize-none'
+              className='p-2 rounded mb-4 text-gray-900 resize-none'
               placeholder='Your message...'
               required
             ></textarea>
 
             <button
               type="submit"
-              className='bg-white text-slate-900 font-bold py-2 rounded hover:bg-slate-200 transition duration-300'
+              className='bg-indigo-600 text-white font-bold py-2 rounded hover:bg-indigo-700 transition duration-300'
             >
               Submit Review
             </button>
@@ -99,7 +99,7 @@ const Footer = () => {
       </div>
 
       {/* Footer Bottom */}
-      <div className='mt-10 text-center text-slate-500'>
+      <div className='mt-10 text-center text-gray-500'>
         &copy; {new Date().getFullYear()} All rights reserved.
       </div>
     </footer>
@@ -110,7 +110,7 @@ const Footer = () => {
 const FooterLink = ({ href, icon, label }) => (
   <a
     href={href}
-    className='flex items-center text-gray-100 mb-4 md:mb-0 hover:text-slate-500 transition-colors duration-300'
+    className='flex items-center text-gray-200 mb-4 md:mb-0 hover:text-indigo-300 transition-colors duration-300'
     aria-label={label}
   >
     {React.cloneElement(icon, { className: 'mr-2', size: 25 })}
@@ -120,7 +120,7 @@ const FooterLink = ({ href, icon, label }) => (
 
 // Reusable Contact Item Component
 const ContactItem = ({ icon, label, href }) => (
-  <li className='flex items-center mb-3 hover:text-slate-400 transition-colors duration-300'>
+  <li className='flex items-center mb-3 hover:text-indigo-300 transition-colors duration-300'>
     <a href={href} className='flex items-center' aria-label={label}>
       {React.cloneElement(icon, { className: 'mr-2', size: 25 })}
       <span>{label}</span>

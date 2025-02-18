@@ -15,7 +15,7 @@ const Footer = () => {
 
         <div className="flex flex-col md:flex-row justify-between mb-8">
           {/* Contact Us */}
-          <div className="mb-10 md:mb-0 md:w-1/3">
+          <div className="mb-10 md:mb-0 md:w-1/4">
             <h2 className="text-xl font-semibold mb-4">Contact Us</h2>
             <ul>
               <ContactItem icon={<Icons.Whatsapp />} label="Whatsapp" href="https://wa.me/+2349155140115" />
@@ -27,7 +27,7 @@ const Footer = () => {
           </div>
 
           {/* Subscribe Section */}
-          <div className="mb-10 md:mb-0 md:w-1/3">
+          <div className="mb-10 md:mb-0 md:w-1/3 mr-4">
             <h2 className="text-xl font-semibold mb-4">Stay Updated</h2>
             <form>
               <label htmlFor="subscribeEmail" className="block text-sm font-medium mb-2">Email address</label>
